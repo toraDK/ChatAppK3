@@ -1,15 +1,11 @@
-<?php 
-  session_start();
-  if(isset($_SESSION['unique_id'])){
-    header("location: users.php");
-  }
-?>
-
 <?php include_once "header.php"; ?>
 <body>
   <div class="wrapper">
-    <section class="form signup">
-      <header>Realtime Chat App</header>
+    <section class="form">
+      <header><img class="logo" src="php/images/internal/logo 1f.png" alt="">
+      <h4>WanfChat</h4>
+    </header>
+      <img class="illus" src="php/images/internal/bendy-customer-service-man-answering-question.gif" alt="" height="250px" >
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
