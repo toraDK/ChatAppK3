@@ -7,5 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chat App | WanfChat</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="php/images/internal/logo 1f.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
