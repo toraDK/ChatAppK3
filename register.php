@@ -9,7 +9,10 @@
 <body>
   <div class="wrapper">
     <section class="form signup">
-      <header>Realtime Chat App</header>
+    <a href="index.php"><i class="fas fa-solid fa-arrow-left fa-2xl"></i></a>
+      <header>Hello!</header>
+      <p>Create a new account</p>
+      <img class="illusreg" src="php/images/internal/urban-202.gif" alt="" height="200px" >
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">

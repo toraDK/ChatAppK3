@@ -169,6 +169,11 @@ section.form.login i {
   color: #333;
   margin-bottom: 30px;
 }
+section.form.signup i {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+}
 
 /* Users List CSS Start */
 .users {
@@ -204,6 +209,11 @@ section.form.login i {
 .wrapper section.form img.illuslog {
   object-fit: cover;
   margin: 30px 80px 30px 80px;
+  border-radius: 0;
+}
+.wrapper section.form img.illusreg {
+  object-fit: cover;
+  margin: 30px 60px 30px 60px;
   border-radius: 0;
 }
 
