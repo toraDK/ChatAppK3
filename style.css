@@ -394,7 +394,7 @@ section.form.login i {
   max-width: calc(100% - 130px);
 }
 .outgoing .details p {
-  background: #016bb8;
+  background: #0166b8;
   color: #fff;
   border-radius: 18px 18px 0 18px;
 }
@@ -435,7 +435,7 @@ section.form.login i {
   width: 55px;
   border: none;
   outline: none;
-  background: #333;
+  background: #003255;
   font-size: 19px;
   cursor: pointer;
   opacity: 0.7;
