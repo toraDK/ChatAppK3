@@ -12,6 +12,7 @@
     <a href="index.php"><i class="fas fa-solid fa-arrow-left fa-2xl"></i></a>
       <header>Welcome!</header>
       <p>Login to continue</p>
+      <img class="illuslog" src="php/images/internal/marginalia-password-protection.gif" alt="" height="200px" >
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">

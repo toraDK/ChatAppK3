@@ -201,14 +201,15 @@ section.form.login i {
   color: #4d4b4b;
 }
 
-.wrapper section.form img.illus {
-  object-fit: cover;
-  margin: 100px 60px 0px 60px;
-  border-radius: 0;
-}
 .wrapper section.form img.illuslog {
   object-fit: cover;
   margin: 30px 80px 30px 80px;
+  border-radius: 0;
+}
+
+.wrapper section.form img.illus {
+  object-fit: cover;
+  margin: 100px 60px 0px 60px;
   border-radius: 0;
 }
 
