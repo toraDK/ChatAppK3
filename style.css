@@ -82,10 +82,13 @@ body {
   border: none;
   color: #fff;
   font-size: 17px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   background: #016bb8;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 13px;
+  margin-top: 30px;
 }
 .form form .button button {
   height: 45px;
@@ -151,6 +154,22 @@ body {
   text-decoration: underline;
 }
 
+section.form.login header {
+  /* margin-bottom: 50px; */
+  letter-spacing: 3px;
+}
+section.form.login p {
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  color: #67676a;
+}
+
+section.form.login i {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
 /* Users List CSS Start */
 .users {
   padding: 25px 30px;
@@ -185,6 +204,11 @@ body {
 .wrapper section.form img.illus {
   object-fit: cover;
   margin: 100px 60px 0px 60px;
+  border-radius: 0;
+}
+.wrapper section.form img.illuslog {
+  object-fit: cover;
+  margin: 30px 80px 30px 80px;
   border-radius: 0;
 }
 
@@ -226,7 +250,7 @@ body {
 }
 .users header .logout {
   display: block;
-  background: #333;
+  background: #016bb8;
   color: #fff;
   outline: none;
   border: none;
@@ -369,7 +393,7 @@ body {
   max-width: calc(100% - 130px);
 }
 .outgoing .details p {
-  background: #333;
+  background: #016bb8;
   color: #fff;
   border-radius: 18px 18px 0 18px;
 }
@@ -414,10 +438,15 @@ body {
   font-size: 19px;
   cursor: pointer;
   opacity: 0.7;
-  pointer-events: none;
+  pointer-events: pointer;
   border-radius: 0 5px 5px 0;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
+
+.typing-area button:hover {
+  background: #016bb8;
+}
+
 .typing-area button.active {
   opacity: 1;
   pointer-events: auto;
@@ -425,12 +454,12 @@ body {
 
 /* Responive media query */
 @media screen and (max-width: 450px) {
+  body {
+    padding: 0;
+  }
   .form,
   .users {
     padding: 20px;
-  }
-  .form header {
-    text-align: center;
   }
   .form form .name-details {
     flex-direction: column;

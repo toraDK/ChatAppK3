@@ -9,7 +9,9 @@
 <body>
   <div class="wrapper">
     <section class="form login">
-      <header>Realtime Chat App</header>
+    <a href="index.php"><i class="fas fa-solid fa-arrow-left fa-2xl"></i></a>
+      <header>Welcome!</header>
+      <p>Login to continue</p>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">
@@ -22,7 +24,7 @@
           <i class="fas fa-eye"></i>
         </div>
         <div class="field button">
-          <input type="submit" name="submit" value="Continue to Chat">
+          <input type="submit" name="submit" value="LOGIN">
         </div>
       </form>
       <div class="link">Not yet signed up? <a href="register.php">Signup now</a></div>
