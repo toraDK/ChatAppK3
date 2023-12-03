@@ -17,7 +17,8 @@
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
-          <img src="php/images/<?php echo $row['img']; ?>" alt="">
+          <img src="php/images/<?php echo $row['img']; ?>" alt="" id="profilepic" onclick="openEditProfileModal()">
+           <!-- Modul Edit Profile (sembunyikan awalnya) -->
           <div class="details">
             <span><?php echo $row['fname']. " " . $row['lname'] ?></span>
             <p><?php echo $row['status']; ?></p>
@@ -34,9 +35,29 @@
   
       </div>
     </section>
+    <div id="editProfileModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeEditProfileModal()">&times;</span>
+              
+              <!-- Form Edit Profile -->
+              <form id="editProfileForm">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="bio">Bio:</label>
+                  <textarea id="bio" name="bio" rows="4"></textarea>
+  
+                  <button type="button" onclick="updateProfile()">Update Profile</button>
+              </form>
+          </div>
+      </div>
   </div>
 
   <script src="javascript/users.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </body>
 </html>
