@@ -303,7 +303,6 @@ section.form.signup i {
 }
 .users .search button {
   position: relative;
-  transform: translateY(-12%);
   z-index: 1;
   width: 47px;
   height: 42px;
@@ -559,7 +558,7 @@ section.form.signup i {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  width: 40%;
 }
 
 .close {
@@ -580,6 +579,7 @@ section.form.signup i {
 .modal form {
   display: grid;
   grid-gap: 10px;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -587,7 +587,7 @@ label {
   font-weight: bold;
 }
 
-input,
+.modal input,
 textarea {
   width: 100%;
   padding: 10px;
@@ -595,8 +595,13 @@ textarea {
   box-sizing: border-box;
 }
 
+.modal-content h3 {
+  margin: 15px;
+}
+
 .modal button {
   background-color: #016bb8;
+  width: 100%;
   color: white;
   padding: 12px;
   border: none;

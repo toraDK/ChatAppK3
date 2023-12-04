@@ -38,7 +38,7 @@
     <div id="editProfileModal" class="modal">
           <div class="modal-content">
               <span class="close" onclick="closeEditProfileModal()">&times;</span>
-              
+              <h3>Edit Profile</h3>
               <!-- Form Edit Profile -->
               <form id="editProfileForm">
                   <label for="FirstName">First Name:</label>
@@ -48,7 +48,7 @@
                   <input type="text" id="lastname" name="lastname" required>
   
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="email" disabled>
   
                   <label for="bio">Image:</label>
                   <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
