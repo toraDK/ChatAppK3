@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -32,9 +36,9 @@ body {
   font-weight: 600;
   padding-bottom: 10px;
 }
-.form form {
+/* .form form {
   margin: 20px 0;
-}
+} */
 .form form .error-text {
   color: #721c24;
   padding: 8px 10px;
@@ -56,7 +60,6 @@ body {
 }
 .form form .field {
   display: flex;
-  margin-bottom: 10px;
   flex-direction: column;
   position: relative;
 }
@@ -88,7 +91,7 @@ body {
   background: #016bb8;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .form form .button button {
   height: 45px;
@@ -133,10 +136,11 @@ body {
 .form form .field i {
   position: absolute;
   right: 15px;
-  top: 70%;
+  top: 60%;
+  font-size: 20px !important;
   color: #ccc;
   cursor: pointer;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
 }
 .form form .field i.active::before {
   color: #333;
