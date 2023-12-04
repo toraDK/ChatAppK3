@@ -303,6 +303,7 @@ section.form.signup i {
 }
 .users .search button {
   position: relative;
+  transform: translateY(-12%);
   z-index: 1;
   width: 47px;
   height: 42px;
@@ -318,6 +319,9 @@ section.form.signup i {
 .users .search button.active {
   background: #333;
   color: #fff;
+}
+.search button.active i {
+  /* transform: translateY(-%); */
 }
 .search button.active i::before {
   content: "\f00d";
@@ -447,6 +451,7 @@ section.form.signup i {
 .typing-area button {
   color: #fff;
   width: 55px;
+  height: 45px;
   border: none;
   outline: none;
   background: #003255;
@@ -560,7 +565,7 @@ section.form.signup i {
 .close {
   color: #aaa;
   float: right;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
 }
 
@@ -572,9 +577,10 @@ section.form.signup i {
 }
 
 /* Style untuk form */
-form {
+.modal form {
   display: grid;
   grid-gap: 10px;
+  margin-top: 50px;
 }
 
 label {
@@ -589,16 +595,17 @@ textarea {
   box-sizing: border-box;
 }
 
-button {
-  background-color: #4caf50;
+.modal button {
+  background-color: #016bb8;
   color: white;
   padding: 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.5s ease-in-out;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #003255;
 }

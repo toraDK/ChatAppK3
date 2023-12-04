@@ -41,14 +41,17 @@
               
               <!-- Form Edit Profile -->
               <form id="editProfileForm">
-                  <label for="username">Username:</label>
-                  <input type="text" id="username" name="username" required>
+                  <label for="FirstName">First Name:</label>
+                  <input type="text" id="firstname" name="firstname" required>
+
+                  <label for="LastName">Last Name:</label>
+                  <input type="text" id="lastname" name="lastname" required>
   
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required>
   
-                  <label for="bio">Bio:</label>
-                  <textarea id="bio" name="bio" rows="4"></textarea>
+                  <label for="bio">Image:</label>
+                  <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
   
                   <button type="button" onclick="updateProfile()">Update Profile</button>
               </form>
