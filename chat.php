@@ -32,11 +32,33 @@
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
-        <button><i class="fab fa-telegram-plane"></i></button>
+        <button class="fileOpen" onclick="openPopup()"><i class="fas fa-regular fa-folder-open"></i></button>
+        <button class="send"><i class="fab fa-telegram-plane"></i></button>
+        <div class="popup" id="popup">
+          <h2>This is a Popup Box</h2>
+          <p>Click outside the box to close.</p>
+          <button onclick="closePopup()">Close</button>
+      </div>
       </form>
     </section>
   </div>
 
+  <script>// Function to open the popup
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+// Close the popup if the popup is clicked
+document.getElementById("popup").addEventListener("click", function (event) {
+  if (event.target === document.getElementById("popup")) {
+    closePopup();
+  }
+});</script>
   <script src="javascript/chat.js"></script>
 
 </body>

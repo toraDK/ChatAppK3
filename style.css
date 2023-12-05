@@ -461,6 +461,15 @@ section.form.signup i {
   transition: all 0.7s ease;
 }
 
+.typing-area button:first-of-type {
+  background: #005500;
+  border-radius: 0px;
+  margin: 0px 3px;
+}
+
+.typing-area button:first-of-type:hover {
+  background: #00c900;
+}
 .typing-area button:hover {
   background: #016bb8;
 }
@@ -610,6 +619,20 @@ textarea {
   transition: all 0.5s ease-in-out;
 }
 
-button:hover {
+.modal button:hover {
   background-color: #003255;
+}
+
+/* Style for the popup box */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
