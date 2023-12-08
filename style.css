@@ -629,10 +629,47 @@ textarea {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, 40%);
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+}
+
+.file-input-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-input-wrapper i {
+  border-radius: 50%;
+  background-color: #00c900;
+  font-size: 16px;
+  padding: 20px 22px;
+  margin: 20px 10px;
+  /* position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); */
+}
+
+.file-input-wrapper i:last-of-type {
+  padding: 20px;
+  background-color: #0166b8;
+}
+
+.file-input-wrapper input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.popup h3 {
+  margin-top: 10px;
 }

@@ -35,9 +35,15 @@
         <button class="fileOpen" onclick="openPopup()"><i class="fas fa-regular fa-folder-open"></i></button>
         <button class="send"><i class="fab fa-telegram-plane"></i></button>
         <div class="popup" id="popup">
-          <h2>This is a Popup Box</h2>
-          <p>Click outside the box to close.</p>
-          <button onclick="closePopup()">Close</button>
+          <span class="close" onclick="closePopup()">&times;</span>
+          <h3>Share File</h3>
+          <div class="file-input-wrapper" onclick="handleIconClick()">
+            <i id="fileIcon" class="fas fa-file"></i>
+            <input type="file" id="fileInput" style="display: none;" onchange="handleFileChange()">
+            <i id="fileIcon" class="fas fa-image"></i>
+            <input type="file" id="fileInput" accept=".jpg, .jpeg, .png" style="display: none;" onchange="handleFileChange()">
+          </div>
+          <!-- <button onclick="closePopup()">Close</button> -->
       </div>
       </form>
     </section>
@@ -58,7 +64,18 @@ document.getElementById("popup").addEventListener("click", function (event) {
   if (event.target === document.getElementById("popup")) {
     closePopup();
   }
-});</script>
+});
+function handleIconClick() {
+    document.getElementById('fileInput').click();
+  }
+
+  function handleFileChange() {
+    // Handle file change event if needed
+    // For example, you can display the selected file name
+    var fileName = document.getElementById('fileInput').value.split('\\').pop();
+    alert('Selected file: ' + fileName);
+  }
+</script>
   <script src="javascript/chat.js"></script>
 
 </body>
