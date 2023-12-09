@@ -34,6 +34,11 @@
       <div class="users-list">
   
       </div>
+      <div class="aboutUs">
+        <a href="about.php">
+        <h3>About Us</h3>
+        </a>
+      </div>
     </section>
     <div id="editProfileModal" class="modal">
           <div class="modal-content">

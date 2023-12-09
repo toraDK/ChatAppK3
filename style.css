@@ -325,7 +325,7 @@ section.form.signup i {
   content: "\f00d";
 }
 .users-list {
-  max-height: 350px;
+  height: 265px;
   overflow-y: auto;
 }
 :is(.users-list, .chat-box)::-webkit-scrollbar {
@@ -672,4 +672,21 @@ textarea {
 
 .popup h3 {
   margin-top: 10px;
+}
+
+.aboutUs {
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+}
+
+.aboutUs a {
+  color: #111111;
+  transition: all 0.5s;
+}
+.aboutUs a:hover {
+  color: #0166b8;
+}
+
+.aboutUs::after {
+  content: "Copyright WanfChat ©2023";
 }
