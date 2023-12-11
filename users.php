@@ -5,6 +5,17 @@
     header("location: login.php");
   }
 ?>
+
+<?php 
+// Display success/error messages
+if (isset($_SESSION['update_profile_success'])) {
+  echo '<div style="color: green;">' . $_SESSION['update_profile_success'] . '</div>';
+  unset($_SESSION['update_profile_success']);
+} elseif (isset($_SESSION['update_profile_error'])) {
+  echo '<div style="color: red;">' . $_SESSION['update_profile_error'] . '</div>';
+  unset($_SESSION['update_profile_error']);
+}?>
+
 <?php include_once "header.php"; ?>
 <body>
   <div class="wrapper">
@@ -45,20 +56,27 @@
               <span class="close" onclick="closeEditProfileModal()">&times;</span>
               <h3>Edit Profile</h3>
               <!-- Form Edit Profile -->
-              <form id="editProfileForm">
+              <form id="editProfileForm" method="post" enctype="multipart/form-data" action="php/editprofile.php">
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" disabled>
+                  <input type="email" id="email" name="email" disabled value="<?php echo $row['email']; ?>">
 
                   <label for="FirstName">First Name:</label>
-                  <input type="text" id="firstname" name="firstname" required>
+                  <input type="text" id="firstname" name="firstname" required value="<?php echo $row['fname']; ?>">
 
                   <label for="LastName">Last Name:</label>
-                  <input type="text" id="lastname" name="lastname" required>
+                  <input type="text" id="lastname" name="lastname" required value="<?php echo $row['lname']; ?>">
+
+                  <label for="Password">Current Password:</label>
+                  <input type="text" id="current_password" name="current_password" required>
+
+                  <label for="Password">New Password:</label>
+                  <input type="text" id="password" name="password" required>
   
                   <label for="bio">Image:</label>
-                  <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
-  
-                  <button type="button" onclick="updateProfile()">Update Profile</button>
+                  <img src="php/images/<?php echo $row['img']; ?>" alt="" width="100px" style="border-radius:0px;">
+                  <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" >
+                  
+                  <button type="submit" onclick="updateProfile()">Update Profile</button>
               </form>
           </div>
       </div>
@@ -66,6 +84,7 @@
 
   <script src="javascript/users.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
 
 </body>
 </html>
